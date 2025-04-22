@@ -1,0 +1,11 @@
+{
+  "name": "mexc-withdraw",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/withdraw.js"
+  },
+  "dependencies": {
+    "undici": "^5.28.3"
+  }
+} 
