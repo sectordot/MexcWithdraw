@@ -296,6 +296,8 @@ async function executeOperationsForAccount(account) {
         }
 
         const withdrawAmount = (parseFloat(spotBalance.balances.find(b => b.asset === settings.currency).free)).toString();
+        console.log('\nОжидаем 1 секунду перед выводом средств...');
+        await new Promise(resolve => setTimeout(resolve, 1000));
         console.log('\nВыполняем вывод средств:');
         const withdrawResult = await withdrawFunds(
             settings.currency,
